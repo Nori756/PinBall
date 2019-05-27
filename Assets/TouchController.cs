@@ -25,7 +25,6 @@ public class TouchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Touch myTouch = Input.GetTouch(0);
 
         Touch[] myTouches = Input.touches;
         for (int i = 0; i < Input.touchCount; i++)
@@ -35,7 +34,7 @@ public class TouchController : MonoBehaviour
 
             if (Input.touchCount > 0)
             {
-                Touch touch = Input.GetTouch(0);
+                Touch touch = Input.GetTouch(i);
 
                 TouchPhase phase = touch.phase;
                 switch (touch.phase)

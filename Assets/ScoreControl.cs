@@ -22,6 +22,7 @@ public class ScoreControl : MonoBehaviour {
     {
         string yourTag = collision.gameObject.tag;
 
+
         if (yourTag == "SmallStarTag")
         {
             score += 10;
